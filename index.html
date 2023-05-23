@@ -1,0 +1,59 @@
+
+<style>
+
+
+body {
+background-color: lightgreen;
+}
+
+
+input[type=range]{
+    /* fix for FF unable to apply focus style bug  */
+    border: 1px solid white; 
+
+    /*required for proper track sizing in FF*/
+    width: 30em;
+}
+
+input[type=range]::-moz-range-track {
+    width: 30em;
+    height: 0.5em;
+    background: red;
+    border: none;
+//    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 5em;
+    width: 1em;
+    border-radius: 0.5em;
+    background: purple;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: red;
+}
+
+</style>
+
+
+<body>
+
+<h5>Mova o botão deslizante.</h5>
+
+<input type="range">
+  
+</body>
+
+
+
+
+
+
